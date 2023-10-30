@@ -47,6 +47,7 @@ class CustomerController extends Controller
             ->with('region')
             ->first();
 
+
         if ($commun) {
             $customer = Customer::create($request->validated());
             return response()->json([

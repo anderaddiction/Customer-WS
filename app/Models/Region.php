@@ -20,7 +20,7 @@ class Region extends Model
      */
     public function communes(): HasMany
     {
-        return $this->hasMany(Commun::class, 'id_reg', 'id');
+        return $this->hasMany(Commun::class, 'id_reg', 'id_reg');
     }
 
     /**
@@ -30,6 +30,6 @@ class Region extends Model
      */
     public function customers(): HasMany
     {
-        return $this->hasMany(Customer::class, 'id_reg', 'id');
+        return $this->hasMany(Customer::class, 'id_reg', 'id_reg');
     }
 }

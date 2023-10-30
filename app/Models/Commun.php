@@ -31,6 +31,6 @@ class Commun extends Model
      */
     public function region(): BelongsTo
     {
-        return $this->belongsTo(Region::class, 'id_reg');
+        return $this->belongsTo(Region::class);
     }
 }
