@@ -92,7 +92,7 @@ class CustomerController extends Controller
             ];
             return response()->json([
                 "success"   =>  true,
-                'message'   => 'Datos registrados exitosamente.',
+                'message'   => 'Datos procesados exitosamente.',
                 'customer'  => $client
             ], 200);
         }
